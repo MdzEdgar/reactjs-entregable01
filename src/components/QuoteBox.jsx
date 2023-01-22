@@ -1,8 +1,11 @@
 import React from 'react'
 
-const QuoteBox = () => {
+const QuoteBox = ({quote}) => {
   return (
-    <div>QuoteBox</div>
+    <div>
+      <p>{quote.quote}</p>
+      <h3>{quote.author}</h3>
+    </div>
   )
 }
 

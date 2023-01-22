@@ -1,4 +1,5 @@
 import './App.css'
+import QuoteBox from './components/QuoteBox'
 import db from "./db/quotes.json"
 
 function App() {
@@ -8,9 +9,11 @@ function App() {
     return arrayElements[randomIndex]
   }
 
+  const [quote, setQuote] = useState(getRandom(db))
+
   return (
     <div className="App">
-      
+      <QuoteBox quote={quote} />
     </div>
   )
 }
