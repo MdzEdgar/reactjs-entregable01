@@ -1,13 +1,13 @@
 import React from 'react'
 import QuoteButton from './QuoteButton'
 
-const QuoteBox = ({quote}) => {
+const QuoteBox = ({quote, newQuote}) => {
   return (
     <div>
       <p>{quote.quote}</p>
       <h3>{quote.author}</h3>
       <i className='bx bxs-quote-alt-left'></i>
-      <QuoteButton />
+      <QuoteButton newQuote={newQuote} />
     </div>
   )
 }

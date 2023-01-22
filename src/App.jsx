@@ -12,9 +12,13 @@ function App() {
 
   const [quote, setQuote] = useState(getRandom(db))
 
+  const newQuote = () => {
+    setQuote(getRandom(db))
+  }
+
   return (
     <div className="App">
-      <QuoteBox quote={quote} />
+      <QuoteBox quote={quote} newQuote={newQuote} />
     </div>
   )
 }

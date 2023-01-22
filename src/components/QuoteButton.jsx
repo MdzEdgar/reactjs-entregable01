@@ -1,8 +1,8 @@
 import React from 'react'
 
-const QuoteButton = () => {
+const QuoteButton = ({newQuote}) => {
   return (
-    <button>
+    <button onClick={newQuote}>
       <i className='bx bx-refresh'></i>
     </button>
   )
