@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react'
 import QuoteBox from './components/QuoteBox'
 import db from "./db/quotes.json"
 
