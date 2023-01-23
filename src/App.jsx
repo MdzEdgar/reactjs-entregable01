@@ -2,6 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import QuoteBox from './components/QuoteBox'
 import db from "./db/quotes.json"
+import { Animated } from 'react-animated-css'
 
 const arrayColors = [
   "#65647C","#F6AE99", "#7F669D" ,"#CE97B0", "#898AA6",
@@ -19,7 +20,7 @@ function App() {
   const [quote, setQuote] = useState(getRandom(db))
 
   const [color, setColor] = useState(getRandom(arrayColors))
-  
+
   const newQuote = () => {
     setQuote(getRandom(db))
     setColor(getRandom(arrayColors))
