@@ -4,8 +4,10 @@ import QuoteBox from './components/QuoteBox'
 import db from "./db/quotes.json"
 
 const arrayColors = [
-  "#067BC2","#84BCDA", "#F37748" ,"#ECC30B", "#D56062",
-"#574D68", "#E0E1DD", "#A72608", "#676F54", "#D64933"]
+  "#65647C","#F6AE99", "#7F669D" ,"#CE97B0", "#898AA6",
+"#5d97d1", "#ffafcc", "#B97A95", "#A267AC", "#FBC6A4", 
+"#046582", "#6E7582", "#763857", "#BFB051", "#85586F"
+]
 
 function App() {
   const getRandom = (arrayElements) => {
