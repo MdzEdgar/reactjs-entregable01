@@ -17,9 +17,18 @@
   box-shadow: 1px 1px 18px rgb(27, 27, 27);
 }
 
+p.quoteBox__quote{
+  font-size: 30px;
+  font-family: 'Texturina', serif;
+}
+
 .quoteBox__author{
   text-align: right;
   margin: 15px 0;
+}
+
+h3.quoteBox__author{
+  font-family: 'Playfair Display SC', serif;
 }
 
 .quoteBox__icon{
